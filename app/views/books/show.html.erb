@@ -35,6 +35,9 @@
           <% end %>
         </tr>
       </table>
+      <div id = "favorite_<%= @book.id %>">
+        <%= render partial: "favorites/favorite", locals: {book: @book} %>
+      </div>
     </div>
   </div>
 </div>
